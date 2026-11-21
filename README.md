@@ -128,4 +128,4 @@ RamScope sera signé avec un certificat fourni par SignPath Foundation (mise en 
 - **Confidentialité** : ce programme ne transfère aucune information vers d'autres systèmes réseau, sauf à la demande explicite de l'utilisateur.
 - **Désinstallation** : aucune installation requise — supprimer le fichier `.exe` suffit. RamScope ne modifie le registre ni aucun fichier système.
 - **Processus de release** : chaque release est construite automatiquement par GitHub Actions (workflow `.github/workflows/release.yml`), puis la demande de signature est approuvée manuellement dans le tableau de bord SignPath avant publication.
-- **Vérifiabilité** : les builds sont reproductibles à partir du code source public. Le workflow inclut les tests, clippy, fmt et la vérification des checksums.
+- **Vérifiabilité** : le workflow inclut les tests, clippy, fmt et la vérification des checksums. Les builds ne sont pas présentés comme reproductibles : aucune mesure ne l'étaye à ce jour (règle 4 du workflow).

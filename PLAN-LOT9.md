@@ -618,7 +618,7 @@ Les tests d'écriture réelle restent limités à une VM ou un Sandbox jetable. 
 ## 8. Critères de sortie du lot 9
 
 - [x] Les 43 tests historiques passent toujours ; les 83 tests Rust actuels passent, ainsi que les quatre tests Node.
-- [ ] Les nouveaux tests de réversion passent pour les autres chantiers.
+- [x] Tests de réversion nommés des chantiers clos (C2, C3–C6, C7, C9–C13, C14, D9-2a) — voir PLAN-LOT9 §9.3–9.8 et §9.11. Le chantier D9-2b (9.12) reste non implémenté et ses tests de réversion sont donc hors périmètre.
 - [x] `cargo fmt --check`, `cargo test`, `cargo clippy --all-targets -- -D warnings`, `cargo build --release` : code retour 0.
 - [x] C2 est implémenté et couvert par les tests de réversion nommés ; le risque local résiduel est documenté dans `SAFETY.md` (D9-1).
 - [x] La CI est verte sur `c9771fc` : run Windows `43663058587`, toutes les étapes au vert.
@@ -632,7 +632,7 @@ Les tests d'écriture réelle restent limités à une VM ou un Sandbox jetable. 
 - [x] La documentation de D9-2a ne promet plus de lecture seule absolue ni de session rétrogradée ; la revue des autres lots reste ouverte.
 - [x] Des actions réelles ont été testées dans un Windows Sandbox jetable : `dmwappushservice` Manuel → Désactivé → Manuel, `StartupAppTask` Ready → Disabled → Ready, et une entrée de démarrage `StartupApproved` 3 → 2, avec les API natives `Win32_Service`, `Get-ScheduledTask` et le registre vérifiés avant, après application et après restauration.
 - [x] Le dépôt distant est à jour après accord de Ro, y compris le compte rendu du test de démarrage.
-- [ ] `PLAN.md` contient les commandes, codes retour et artefacts du lot.
+- [x] `PLAN.md` contient les commandes, codes retour et artefacts du lot (sections 12–17, confirmé par relecture le 2026-11-21).
 - [x] C7 et C6 sont implémentés et couverts par des tests unitaires locaux ; C6 est validé dans Windows Sandbox pour la propagation des options (`--port`, `--host`, `--no-browser`, `--elevated` unique, `--no-admin` retiré). Le consentement UAC, le clic DOM et `--host localhost` ont depuis été testés sur compte standard.
 
 ## 9. Hors périmètre

@@ -1,7 +1,8 @@
 # RamScope — dossier de passation pour Hermes
 
 - **Destinataire :** Hermes, responsable du site et de la majeure partie du développement
-- **Mise à jour :** 15 novembre 2026
+- **Mise à jour :** 21 novembre 2026
+- **Dernier commit pris en compte :** `778acd2` (`docs: align signing status with reality (SignPath request pending)`), branche `main`.
 - **Dépôt :** <https://github.com/Roger364/q-memory-manager> (public)
 - **Site :** <https://bissestudio.ch> — code du site séparé de ce dépôt
 - **Version :** 1.0.0
@@ -19,9 +20,12 @@ RamScope est un outil Windows 10/11 qui inventorie la mémoire, les services, le
 - Positionnement : **observation et décision**, pas nettoyeur automatique ni « accélérateur Windows ».
 - Public visé : utilisateurs avancés, support informatique, développeurs, personnes qui veulent comprendre la RAM plutôt que cliquer sur un bouton magique.
 
-### État au 15 novembre 2026
+### État au 21 novembre 2026
 
-- Dernier commit fonctionnel avant ce document : `a7c1973` (`Archiver et ignorer les preuves Windows Sandbox`).
+- Référence actuelle : `778acd2` (`docs: align signing status with reality (SignPath request pending)`), branche `main`, arbre propre.
+- CI GitHub verte sur `778acd2` (runs du 16 et du 20/11).
+- Suite locale : **83 tests Rust + 4 tests Node**, tous verts ; clippy et fmt propres.
+- La page Open Source `/open-source/` est publiée (cf. handoff `STATE.md`, phase 6) ; ce document ne la décrit plus comme absente.
 - Branche `main`, dépôt public, GitHub détecte la licence MIT.
 - CI GitHub verte : run `43682552060`, toutes les étapes réussies.
 - Suite locale : **83 tests Rust + 4 tests Node**, tous verts.
@@ -210,9 +214,7 @@ Ne pas transformer une limite en argument marketing. En cas de doute, écrire «
 
 ## 9. Site et présence publique
 
-Le site `bissestudio.ch` est géré séparément. Je n'ai pas audité son code, son hébergement ni ses credentials.
-
-Page Open Source à publier (encore absente au 15 novembre 2026) :
+Page Open Source publiée au 21 novembre 2026 (`/open-source/` en ligne, cf. handoff `STATE.md`, phase 6) ; ce document ne la présente plus comme absente. Le site `bissestudio.ch` est géré séparément. Je n'ai pas audité son code, son hébergement ni ses credentials.
 
 - présenter RamScope en une phrase : inventaire mémoire/services/démarrage, explications et réglages réversibles ;
 - lien vers le dépôt GitHub et vers `LICENSE` ;
@@ -228,7 +230,7 @@ La page légale existante indique « Bisse Studio — Ro, activité individuelle
 
 | Sujet | État | Suite proposée |
 |---|---|---|
-| Page Open Source | À faire | Priorité visibilité : publier une page courte, honnête et liée au dépôt. |
+| Page Open Source | Publiée (21/11) | Page courte, honnête et liée au dépôt, en ligne sous `/open-source/`. |
 | D9-2b — helper élevé one-shot | Conception seulement | Ne pas l'annoncer comme livré ; cadrer le canal, l'authentification, la durée de vie et les tests avant implémentation. |
 | `review - workbuddy.md` dans l'historique | Ouvert | Ne pas réécrire l'historique sans Ro ; un `force-push` invaliderait les hashes cités dans les plans. |
 | Test navigateur/Edge | Partiel | Refaire un parcours manuel des actions principales sous Edge ou Chromium, et consigner les limites. |
