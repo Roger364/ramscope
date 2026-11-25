@@ -1,7 +1,7 @@
 # RamScope
 
 [![Licence: MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](LICENSE)
-[![CI](https://github.com/Roger364/q-memory-manager/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Roger364/q-memory-manager/actions/workflows/ci.yml)
+[![CI](https://github.com/Roger364/ramscope/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Roger364/ramscope/actions/workflows/ci.yml)
 
 RamScope inventorie la mémoire, les services et le démarrage automatique d'un PC Windows 10/11, explique ce qui occupe la RAM, et propose des réglages réversibles. Il ne supprime aucun fichier et ne modifie aucun réglage sans confirmation explicite.
 

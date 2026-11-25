@@ -3,7 +3,7 @@
 - **Destinataire :** Hermes, responsable du site et de la majeure partie du développement
 - **Mise à jour :** 21 novembre 2026
 - **Dernier commit pris en compte :** `778acd2` (`docs: align signing status with reality (SignPath request pending)`), branche `main`.
-- **Dépôt :** <https://github.com/Roger364/q-memory-manager> (public)
+- **Dépôt :** <https://github.com/Roger364/ramscope> (public)
 - **Site :** <https://bissestudio.ch> — code du site séparé de ce dépôt
 - **Version :** 1.0.0
 - **Licence :** MIT, copyright Bisse Studio
@@ -270,8 +270,8 @@ Ordre pragmatique : page Open Source → vérification manuelle navigateur → p
 
 ## 13. Contacts et ressources
 
-- Dépôt : <https://github.com/Roger364/q-memory-manager>
-- CI : <https://github.com/Roger364/q-memory-manager/actions>
+- Dépôt : <https://github.com/Roger364/ramscope>
+- CI : <https://github.com/Roger364/ramscope/actions>
 - Site : <https://bissestudio.ch>
 - Contact général et sécurité : `contact@bissestudio.ch`
 - Vulnérabilités : canal privé décrit dans [`SECURITY.md`](../SECURITY.md), pas d'issue publique.

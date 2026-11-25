@@ -22,7 +22,7 @@ SignPath.io est gratuit pour les projets open source. Il signe les binaires via 
 
 ### Configuration GitHub
 
-Dans le dépôt `Roger364/q-memory-manager` :
+Dans le dépôt `Roger364/ramscope` :
 
 1. **Variables** (Settings → Variables → Actions) :
    - `SIGNPATH_ORGANIZATION_ID` = ID de l'organisation SignPath
@@ -53,6 +53,31 @@ Une fois un binaire signé disponible :
 1. Mettre à jour `site-v2/content/site.ts` → `downloadUrl` dans `openSourceTools[0]`.
 2. Mettre à jour la page Open source pour afficher le bouton de téléchargement.
 3. Mettre à jour `ramscope.md` dans le vault.
+
+## Dossier de candidature (prêt à soumettre)
+
+État vérifié le 2026-11-21 : dépôt public `Roger364/ramscope`, licence MIT, CI verte (runs `43681932387`, `43663058587` et Release `44925940966`), `release.yml` déjà câblé sur `signpath/github-action-submit-signing-request@v1` (variable `SIGNPATH_ORGANIZATION_ID`, secret `SIGNPATH_API_TOKEN`). Le compte et l'organisation SignPath restent à créer par le mainteneur ; aucun secret n'est versionné.
+
+Texte à coller dans le formulaire :
+
+```text
+Project: RamScope
+Repository: https://github.com/Roger364/ramscope (public, MIT)
+Maintainer: Roger364
+Platform: Windows 10/11 x64, single portable .exe, no installer
+What it does: inventories RAM, services and startup items, explains memory usage,
+and applies reversible tweaks only after explicit user confirmation. The UI is
+served on loopback (127.0.0.1); no telemetry, no network access, no bundled
+third-party binaries, no auto-update.
+Why signing: the .exe is distributed directly from GitHub Releases and triggers
+SmartScreen when unsigned.
+Build: Rust stable, `cargo build --release` in ramscope/ (static CRT); the release
+workflow submits ramscope.exe to SignPath with
+signpath/github-action-submit-signing-request@v1.
+Artifact: ramscope.exe (Windows x64), release signing policy.
+```
+
+Avant le dépôt : publier la page de présentation du site et la note de version pour que le projet soit identifiable publiquement (dépôt, CI et release v1.0.0 le sont déjà).
 
 ## Alternatives évaluées
 
