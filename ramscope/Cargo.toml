@@ -4,7 +4,7 @@ version = "1.0.0"
 edition = "2021"
 description = "RamScope - analyseur RAM / services / demarrage pour Windows"
 license = "MIT"
-repository = "https://github.com/Roger364/q-memory-manager"
+repository = "https://github.com/Roger364/ramscope"
 publish = false
 
 [dependencies]
